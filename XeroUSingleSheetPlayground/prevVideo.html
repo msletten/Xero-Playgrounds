@@ -1,0 +1,500 @@
+<html>
+
+    <head>
+        <!-- We like people who view source. Check out our careers page https://www.xero.com/careers/ -->
+        <!--title -->
+        <title>Xero U - End of Financial Year in Xero - 2015</title>
+        <!-- links -->
+        <link rel="stylesheet" href="css/one-page-assets.css" type="text/css"/>
+        <link rel='shortcut icon' href='https://www.xero.com/favicon.ico'>  
+        <!-- scripts -->
+        <script type="text/javascript">
+            
+            function flipChevron(id1,id2,id3){
+                
+                var upDown = document.getElementById(id3).value;
+                var collapse = document.getElementsByClassName("video-player-box");
+                var flipChev = document.getElementsByClassName("flip");
+                var chevStat = document.getElementsByClassName("chevStatus");
+                var i;
+               
+                for (i=0; i<collapse.length; i++) {
+                flipChev[i].style.transform = "rotate(0deg)";
+                chevStat[i].value = "down";
+                collapse[i].style.opacity = "0";
+                collapse[i].style.display = "none";}
+                
+                if(upDown !== "up") {
+                document.getElementById(id1).style.transform = "rotate(180deg)";
+                document.getElementById(id3).value = "up";       
+                document.getElementById(id2).style.display = "block";
+               
+               setTimeout(function(){
+                        document.getElementById(id2).style.opacity = "1";
+                    },300);
+                }
+                
+
+               
+                }
+                
+                
+                
+                function darkenPreview() {
+                    document.getElementById("preview-play-button").style.opacity = 1;
+                    
+                }
+                
+                function dimPreview() {
+                    
+                    document.getElementById("preview-play-button").style.opacity = 0.85;
+                }
+                
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+        </script>
+        <!-- <script src='https://a.vimeocdn.com/js/froogaloop2.min.js'>
+        </script> -->
+        <script src='https://f.vimeocdn.com/js/froogaloop2.min.js'>
+        </script>
+       <!-- <script src='//secure-a.vimeocdn.com/js/froogaloop2.min.js'>
+        </script> -->
+        <script type="text/javascript">
+           
+            function playVid() {
+                var show = "video-box";
+                var hide = "button";
+                document.getElementById(hide).style.opacity = 0;
+                setTimeout(function(){
+                    document.getElementById(hide).style.display = "none";  
+                },500);
+                setTimeout(function(){
+                document.getElementById(show).style.display = "block";
+                document.getElementById(show).style.opacity = 1;
+
+                },500);
+                var pvsrc = $('#video-box').find('iframe').attr('src');
+                $('#video-box').find('iframe').attr('src', pvsrc+'&autoplay=1');
+                
+            }
+        </script>
+        
+        
+    </head>
+    <body>
+        <div class="header-mobile">
+            <div class="header-mobile-inner">
+                <a href='https://www.xero.com/training/'>
+                    <img class="mobile-header-img" src="logo-blue-small.png"/>
+                    <span class="mobile-header-text">GO TO XERO U</span>
+                </a>
+            </div>
+        </div>
+        <div class="header-large">
+            <div class="header-large-inner">
+                <div class="header-left">
+                    <a target="_blank" class="global-header-logo" href="https://www.xero.com/">
+                        <img class="header-img" src="logo-blue-small.png"/>
+                    </a>
+                    <span class="header-tagline">
+                        Beautiful accounting software
+                    </span>
+                </div>
+                <div class="header-right">
+                    <a class="global-header-main-link" href="https://www.xero.com/training/" target="_blank">GO TO XERO U</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom-border" style="background-color: #13B5EA">
+        </div>    
+        
+        <div class='body-box-top-outer'>    
+            <div class='body-box-top'>
+                <div class='course-info'>
+                    <div class='course-name'>
+                        <h1>End of Financial Year in Xero</h1>
+                    </div>
+                    <div class='course-description'>
+                        From the 13th of May, join us weekly as we help get you ready for the end of the financial year with Xero! We will guide you through the essential steps to ensure you have accurate financial information for your end of year lodgements. The Xero Education team will work with you and your advisor every step of the way, in the lead up to the end of financial year. Get on the front foot and register below.
+                    </div>
+                </div>
+                <div class='preview-video-box' id='button' onMouseOver='darkenPreview();' onMouseOut='dimPreview();'>
+                    <div class='preview-button eofy-fix' id='preview-play-button' onclick='playVid(); play();'>
+                        <img class='preview-button-img' src='preview.png'/>
+                        PREVIEW
+                    </div>
+                    <img class='preview-video-img' onclick='playVid(); play();' alt='Xero U Preview' src='https://www.xero.com/images/training/preview-video-blue.jpg'/>
+                </div>
+
+                <div id='video-box' class='preview-vid-iframe' style="display: none;">
+                    <iframe class='preview-vid-iframe-actual'style='float: right;' id='video' src='https://player.vimeo.com/video/127116292?api=1&player_id=video' width='420' height='240' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+        
+        
+        <div class="body-box-bottom-outer" style="padding-bottom: 30px;">
+            <div class="body-box-bottom">
+                <div class="watch-now">
+                    <h1 style="margin-top:0px; margin-bottom:25px;">
+                        Register Here
+                    </h1>
+                </div>
+
+                                <!-- video 1 start-->
+                <div class='video-info'>
+                    <div class='video-info-header' onclick="flipChevron('chev1','video1', 'chevdir1');">
+                        <div class='video-icon'>
+                            <img src='play.png'class='play-icon'/>
+                        </div>
+                        <div class="title-2">Ensuring your Data is Complete</div>
+                        <div class='video-name'>
+                            Watch Now
+                        </div>
+                        <div class='video-duration'>
+                            <span>
+                                Video - 10 mins
+                            </span>
+                        </div>
+                        <div class='video-description'>
+                            Ensuring your Data is Complete
+                        </div>
+                        <div class='video-chevron'>
+                            <input id='chevdir1' value='down' class='chevStatus' type='hidden'/>
+                            <img style='margin-top: 9px; opacity:.9;' class='flip' id='chev1' src='down.png'/>
+                        </div>
+                    </div>
+                    <div id='video1' class='video-player-box' style="height: auto;">
+                        <div style="margin-bottom: 10px;">
+                            
+                    Do you want clean information to work with at the end of the financial year?<br><br>
+                    This session will give you some tips, to help prepare your data.<br><br>
+                    We'll give you some recommendations of how you can provide sufficient information about your transactions, so you can provide this to an advisor or complete compliance tasks.
+                    </div>
+                        <div class='video-player-inner'>
+                            <iframe class= 'video-iframe-eofy' style="width: 100%; height: 100%;" src='https://player.vimeo.com/video/127796682' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                            </iframe>
+                            
+                                                    
+                        </div>
+                    </div>
+                </div>
+                <!-- video 1 end-->
+                
+                
+                <!-- video 2 start-->
+                <div class='video-info'>
+                    <div class='video-info-header' onclick="flipChevron('chev2','video2', 'chevdir2');">
+                        <div class='video-icon'>
+                            <img src='play.png'class='play-icon'/>
+                        </div>
+                        <div class="title-2">Check Accuracy and Make Corrections</div>
+                        <div class='video-name'>
+                            Watch Now
+                        </div>
+                        <div class='video-duration'>
+                            <span>
+                                Video - 18 mins
+                            </span>
+                        </div>
+                        <div class='video-description'>
+                            Check Accuracy and Make Corrections
+                        </div>
+                        <div class='video-chevron'>
+                            <input id='chevdir2' value='down' class='chevStatus' type='hidden'/>
+                            <img style='margin-top: 9px; opacity:.9;' class='flip' id='chev2' src='down.png'/>
+                        </div>
+                    </div>
+                    <div id='video2' class='video-player-box' style="height: auto;">
+                        <div style="margin-bottom: 10px;">
+                            
+                                                In the past, you may have had concerns about the accuracy of your transactions, or even spent quality time cleaning them up.<br><br>
+                            This session will provide you with tips on how to avoid these inconsistencies from coming up in the first place.<br><br>
+                            We'll also show you how you can quickly and easily clean up transactions at the end of the financial year, to pass on to your advisor or to get ready for your compliance tasks.<br><br>
+                    </div>
+                        <div class='video-player-inner'>
+                            <iframe class= 'video-iframe-eofy' style="width: 100%; height: 100%;" src='https://player.vimeo.com/video/130275242' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                            </iframe>
+                            
+                                                    
+                        </div>
+                    </div>
+                </div>
+                <!-- video 2 end-->
+                
+                <!-- video 3 start-->
+                <div class='video-info'>
+                    <div class='video-info-header' onclick="flipChevron('chev3','video3', 'chevdir3');">
+                        <div class='video-icon'>
+                            <img src='play.png'class='play-icon'/>
+                        </div>
+                        <div class="title-2">Bank Reconciliation</div>
+                        <div class='video-name'>
+                            Watch Now
+                        </div>
+                        <div class='video-duration'>
+                            <span>
+                                Video - 12 mins
+                            </span>
+                        </div>
+                        <div class='video-description'>
+                            Bank Reconciliation
+                        </div>
+                        <div class='video-chevron'>
+                            <input id='chevdir3' value='down' class='chevStatus' type='hidden'/>
+                            <img style='margin-top: 9px; opacity:.9;' class='flip' id='chev3' src='down.png'/>
+                        </div>
+                    </div>
+                    <div id='video3' class='video-player-box' style="height: auto;">
+                        <div style="margin-bottom: 10px;">
+                            
+                                                It's important to check that your Bank Statement Balance is in line with what's shown on your Balance Sheet report at the end of the year.<br><br>
+                    If it's not spot on, we can help you identify where the problems are and how to rectify any discrepancies.<br><br>
+                    Help yourself, by getting this important task done before year-end!
+                    </div>
+                        <div class='video-player-inner'>
+                            <iframe class= 'video-iframe-eofy' style="width: 100%; height: 100%;" src='https://player.vimeo.com/video/130275243' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                            </iframe>
+                            
+                                                    
+                        </div>
+                    </div>
+                </div>
+                <!-- video 3 end-->
+                
+                
+                                <!-- video 4 start-->
+                <div class='video-info'>
+                    <div class='video-info-header' onclick="flipChevron('chev4','video4', 'chevdir4');">
+                        <div class='video-icon'>
+                            <img src='play.png'class='play-icon'/>
+                        </div>
+                        <div class="title-2">Finish on a High with Revenue</div>
+                        <div class='video-name'>
+                            Watch Now
+                        </div>
+                        <div class='video-duration'>
+                            <span>
+                                Video - 10 mins
+                            </span>
+                        </div>
+                        <div class='video-description'>
+                            Finish on a High with Revenue
+                        </div>
+                        <div class='video-chevron'>
+                            <input id='chevdir4' value='down' class='chevStatus' type='hidden'/>
+                            <img style='margin-top: 9px; opacity:.9;' class='flip' id='chev4' src='down.png'/>
+                        </div>
+                    </div>
+                    <div id='video4' class='video-player-box' style="height: auto;">
+                        <div style="margin-bottom: 10px;">
+                            
+                    Get the most out of your business while wrapping up at year-end, and start the new financial year with a bang.<br><br>
+                    We'll discuss following up on outstanding quotes, unpaid invoices and ensuring all payments have been applied, to finish the year on a high. We'll also cover refunds and bad debts, to ensure a fresh start going forward.
+                    </div>
+                        <div class='video-player-inner'>
+                            <iframe class= 'video-iframe-eofy' style="width: 100%; height: 100%;" src='https://player.vimeo.com/video/131729860' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                            </iframe>
+                            
+                                                    
+                        </div>
+                    </div>
+                </div>
+                <!-- video 4 end-->
+                
+                
+                
+                <!-- video 5 start-->
+                <div class='video-info'>
+                    <div class='video-info-header' onclick="flipChevron('chev5','video5', 'chevdir5');">
+                        <div class='video-icon'>
+                            <img src='play.png'class='play-icon'/>
+                        </div>
+                        <div class="title-2">Tie up your Expenses</div>
+                        <div class='video-name'>
+                            Watch Now
+                        </div>
+                        <div class='video-duration'>
+                            <span>
+                                Video - 9 mins
+                            </span>
+                        </div>
+                        <div class='video-description'>
+                            Tie up your Expenses
+                        </div>
+                        <div class='video-chevron'>
+                            <input id='chevdir5' value='down' class='chevStatus' type='hidden'/>
+                            <img style='margin-top: 9px; opacity:.9;' class='flip' id='chev5' src='down.png'/>
+                        </div>
+                    </div>
+                    <div id='video5' class='video-player-box' style="height: auto;">
+                        <div style="margin-bottom: 10px;">
+                    Ensuring that business expenses are wrapped up for year-end, is an important step.<br><br>
+                    We'll look at following up on purchase orders, checking in on accounts payables, and ensuring that all payments have been applied. We'll also look at closing off any expense claims made by staff.
+                    </div>
+                        <div class='video-player-inner'>
+                            <iframe class= 'video-iframe-eofy' style="width: 100%; height: 100%;" src='https://player.vimeo.com/video/131852108' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                            </iframe>
+                            
+                                                    
+                        </div>
+                    </div>
+                </div>
+                <!-- video 5 end-->
+                
+                <!-- video 6 start-->
+                <div class='video-info'>
+                    <div class='video-info-header' onclick="flipChevron('chev6','video6', 'chevdir6');">
+                        <div class='video-icon'>
+                            <img src='play.png'class='play-icon'/>
+                        </div>
+                        <div class="title-2">Payroll End of Year Processing</div>
+                        <div class='video-name'>
+                            Watch Now
+                        </div>
+                        <div class='video-duration'>
+                            <span>
+                                Video - 56 mins
+                            </span>
+                        </div>
+                        <div class='video-description'>
+                            Payroll End of Year Processing
+                        </div>
+                        <div class='video-chevron'>
+                            <input id='chevdir6' value='down' class='chevStatus' type='hidden'/>
+                            <img style='margin-top: 9px; opacity:.9;' class='flip' id='chev6' src='down.png'/>
+                        </div>
+                    </div>
+                    <div id='video6' class='video-player-box' style="height: auto;">
+                        <div style="margin-bottom: 10px;">
+                    Join us for a free recording of our Payroll End of Year webinar, a must for any payroll administrator. You will learn about the updates we've made to Xero to help you breeze through your payroll end of year.
+                    </div>
+                        <div class='video-player-inner'>
+                            <iframe class= 'video-iframe-eofy' style="width: 100%; height: 100%;" src='https://player.vimeo.com/video/131377033' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                            </iframe>
+                            
+                                                    
+                        </div>
+                    </div>
+                </div>
+                <!-- video 6 end-->
+                
+                        <!-- video 8 start-->
+                <div class="video-info">
+                    <div class="video-info-header" onclick="flipChevron('chev8','video8', 'chevdir8');">
+                        <div class="video-icon">
+                            <img src="webinar.png" class="play-icon"/>
+                        </div>
+                        <div class="title-2">Stocktake</div>
+                        <div class="video-name">
+                            1st July 2015 - 1:30pm
+                        </div>
+                        <div class="video-duration">
+                            <span>
+                                Webinar - 30 mins
+                            </span>
+                        </div>
+                        <div class="video-description">
+                            Stocktake
+                        </div>
+                        <div class="video-chevron">
+                            <input id="chevdir8" value="down" class="chevStatus" type="hidden"/>
+                            <img style="margin-top: 9px; opacity:.9;" class="flip" id="chev8" src="down.png"/>
+                        </div>
+                    </div>
+                    <div id="video8" class="video-player-box" style="height: 210px;">
+                    
+                        <div style="margin-bottom: 15px;"><span style="font-weight: bold; margin-right:5px;">Presenter:</span>Ryan Strous</div>
+                        <div class="mob-date"  style="margin-bottom: 15px;"><span style="font-weight: bold; margin-right:5px;">Date: </span>1st July 2015 - 12:30pm</div>
+                        <div style="margin-bottom: 10px;">
+                    If you buy and sell stock, completing a final stocktake is an important part of  your year-end checklist.<br><br>
+                    We'll discuss a number of steps to think about for a successful year-end stocktake and let you know what to do if there are any discrepancies. This will allow you to feel confident in your stock numbers, to make sound decisions in the new year.
+
+                    </div>
+                        <div class="button-div">
+                    <a target="_blank" href="https://attendee.gotowebinar.com/register/7058167926210325762" class="xero-button">Register</a>
+                    </div>
+                    </div>
+                </div>
+                <!-- video 8 end-->
+                
+                <!-- video 9 start-->
+                <div class="video-info">
+                    <div class="video-info-header" onclick="flipChevron('chev9','video9', 'chevdir9');">
+                        <div class="video-icon">
+                            <img src="webinar.png" class="play-icon"/>
+                        </div>
+                        <div class="title-2">Communication</div>
+                        <div class="video-name">
+                            8th July 2015 - 1:30pm
+                        </div>
+                        <div class="video-duration">
+                            <span>
+                                Webinar - 30 mins
+                            </span>
+                        </div>
+                        <div class="video-description">
+                            Communication
+                        </div>
+                        <div class="video-chevron">
+                            <input id="chevdir9" value="down" class="chevStatus" type="hidden"/>
+                            <img style="margin-top: 9px; opacity:.9;" class="flip" id="chev9" src="down.png"/>
+                        </div>
+                    </div>
+                    <div id="video9" class="video-player-box" style="height: 250px;">
+                    
+                        <div style="margin-bottom: 15px;"><span style="font-weight: bold; margin-right:5px;">Presenter:</span>Laura Wilson</div>
+                        <div class="mob-date"  style="margin-bottom: 15px;"><span style="font-weight: bold; margin-right:5px;">Date: </span>8th July 2015 - 12:30pm</div>
+                        <div style="margin-bottom: 10px;">
+                    We always recommend small businesses work with our certified advisors to help them get the most out of using Xero. This becomes a lot more important at the end of financial year.<br><br>
+                    While working with an advisor, or collaborating with company staff in your Xero organisation, it's important to ensure that you have good communication with all parties involved. We’ll show you some features of Xero which can facilitate communication and explain how they will help you at the end of the year.
+                    </div>
+                        <div class="button-div">
+                    <a target="_blank" href="https://attendee.gotowebinar.com/register/7058167926210325762" class="xero-button">Register</a>
+                    </div>
+                    </div>
+                </div>
+                <!-- video 9 end-->             
+                
+            </div>
+        </div>
+        
+        
+        
+        <script type="text/javascript">
+
+            var iframe = $('#video')[0],
+            player = $f(iframe);
+            player.addEvent('ready', function() {		
+                player.addEvent('finish', onFinish);
+            });
+
+            function onFinish() {
+                var show = "button";
+                var hide = "video-box";
+                document.getElementById(hide).style.display = "none";
+                document.getElementById(show).style.display = "block";
+
+                    setTimeout(function(){
+                document.getElementById(show).style.opacity=1;
+                
+            },500);
+        
+        setTimeout(function(){
+                document.getElementById(hide).style.opacity=0;
+                
+            },500);
+    
+    }
+            
+            function play() {
+                player.api('play');
+            }
+
+        </script>
+        
+        
+    </body>
+</html>

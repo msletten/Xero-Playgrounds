@@ -1,0 +1,214 @@
+
+<html>
+
+
+    <head>
+        <!-- We like people who view source. Check out our careers page https://www.xero.com/careers/ -->
+        <!--title -->
+        <title>Xero U - Xero and Accounting Fundamentals for Business Owners</title>
+        <!-- stylesheets -->
+        <link rel='stylesheet' href='css/one-page-assets.css' type='text/css'>
+        <link rel="stylesheet" href="jqueryAccordion/jquery-ui.css" type="text/css">
+        <!--<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> -->
+		<link rel='shortcut icon' href='https://www.xero.com/favicon.ico'> 
+        <!-- scripts -->
+        <script src="jqueryAccordion/jquery-ui.js"></script>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+        <script src="jqueryAccordion/external/jquery/jquery.js"></script>
+        <script src="jqueryAccordion/jquery-ui.js"></script>
+        <script src='http://a.vimeocdn.com/js/froogaloop2.min.js'></script>
+         
+         <!-- Accordion Option 3 -->
+        <script>
+            $(function() {
+                $( "#accordion-option3" ).accordion({
+                    collapsible: true, active: false, heightStyle: "content", animate: 200
+                });
+                $( "#accordion-option3" ).accordion({
+                    icons: {"header": "ui-icon-triangle-1-e", "activeHeader": "ui-icon-triangle-1-s"}
+                });
+                $('#accordion-option3 h3').bind('click',function(){
+                    var self = this;
+                    setTimeout(function() {
+                    theOffset = $(self).offset();
+                    $('body,html').animate({ scrollTop: theOffset.top - 75 });
+                    }, 310);
+                });
+                var hash = window.location.hash;
+    			var anchor = $('a[href$="'+hash+'"]');
+    			if (anchor.length > 0){
+        		anchor.click();
+    			}
+            });
+        </script>
+
+        <!-- Nested Accordion -->
+         <!-- <script>
+            $(function() {
+                $('#accordion-option4').accordion({heightStyle: "content", collapsible: true, active: false, animate: 200,
+                icons: {"header": "ui-icon-circle-triangle-e", "activeHeader": "ui-icon-circle-triangle-s"}});
+                $('#nested-accordion').accordion({heightStyle: "content", collapsible: true, active: false, animate: 200,
+                icons: {"header": 'ui-icon-plus', "activeHeader": 'ui-icon-minus'}});
+                $('#accordion-option4 h3, #nested-accordion h3').bind('click',function(){
+                    var self = this;
+                    setTimeout(function() {
+                    theOffset = $(self).offset();
+                    $('body,html').animate({ scrollTop: theOffset.top - 75 });
+                    }, 310);
+                });
+            });
+            </script> -->
+ 
+    </head>
+    <body>
+        <div class='header-mobile'>
+            <div class='header-mobile-inner'>
+                <a href='https://www.xero.com/training/'>
+                    <img class='mobile-header-img' src='https://training.xero.com/XeroU/one-page-assets/img/logo-blue-small.png'/>
+                    <span class='mobile-header-text'>GO TO XERO U</span>
+                </a>
+            </div>
+        </div>
+        <div class='header-large'>
+            <div class='header-large-inner'>
+                <div class='header-left'>
+                    <a target='_blank' class='global-header-logo' href='https://www.xero.com/' rel='home' data-gacategory='Header - Global' data-gaaction='Internal Pagelink'>
+                        <img class='header-img' src='https://training.xero.com/XeroU/one-page-assets/img/logo-blue-small.png'/>
+                    </a>
+                    <span class='header-tagline'>Beautiful accounting software</span>
+                </div>
+                <div class='header-right'>
+                    <a class='global-header-main-link' href='https://www.xero.com/training/' target='_blank'>GO TO XERO U</a>
+                </div>
+            </div>
+        </div>
+        <div class='header-bottom-border' style='background-color: #13B5EA;'>
+        </div>
+        <div class='body-box-top-outer'>    
+            <div class='body-box-top'>
+                <div class='course-info'>
+                    <div class='course-name'>
+                        <h1>Xero &amp; Accounting Fundamentals</h1>
+                    </div>
+                    <div class='course-description'>
+                        This four-module course aims to provide a foundational level of accounting knowledge for those without any prior bookkeeping or accounting education.<br><br>A great starting point, before you progress on to other Xero U courses.
+                    </div>
+                </div>
+                <div class='preview-video-box' id='button'>
+
+                    <img class='preview-video-img' style='cursor: default;' alt='Xero U Preview' src='https://www.xero.com/images/training/preview-video-blue.jpg'/>
+                </div>
+                <div id='video-box' class='preview-vid-iframe'>
+                    <!-- <iframe class='preview-vid-iframe-actual' style='float: right;' id='video' src='https://player.vimeo.com/video/?api=1&player_id=video' width='420' height='240' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                    </iframe> -->
+                </div>
+            </div>
+        </div>
+        <!--Pop Up -->
+   <!-- <div class="ribbon">
+         <div id="redwrapper">
+           <p><a href="javascript:void(0)" onclick="toggle_popUp('redPopUp');">Technical difficulties with Mobile Web builds....&rarr;</a></p>
+          </div>
+          </div> --> 
+          <!-- Red Pop Up --> 
+        <!-- <div id="redPopUp">
+<div class="ribbon">
+<div class="popupwrapper">
+<div class="bannerDialogBox"><span id="redBannerTitle">Sporadic Issues</span><p>We are temporarily experiencing sporadic issues with Mosaic. Users may experience issues when attempting to log into Mosaic or accessing data in the Mosaic app. Please note this does not impact any live apps. We hope to have this issue resolved shortly.</p><p>Thanks for your patience!</p><a href="javascript:void(0)" onclick="toggle_popUp('redPopUp');" class="popUpCloseButton"><img src="http://helpdesk-mosaic.s3.amazonaws.com/images/closeRed.png"></a>
+   </div>
+</div>
+</div>
+</div> --> 
+        <div class='body-box-bottom-outer'>
+            <div class='body-box-bottom'>
+                <div class='watch-now'>
+                    <h1 style='margin-top:0px; margin-bottom:25px;'>
+                        <!-- Watch Now -->
+                    </h1>
+                </div>
+                <!-- Accordion -->
+                <div>You will also want to check out <a href="https://docs.google.com/a/xero.com/document/d/1iWKEuz7wK7_ttHYkR3m91YAiqDCZr0WvW9uKvo_jHIQ/edit?usp=sharing">these documents</a> as you move through this course.</div>
+        <div id="accordion-lesson-style">
+            <!--Accordion 3 -->
+            <!-- Edit below to produce the one pager -->
+            <!-- <h1>Option 3</h1> -->
+            <div id='accordion-option3'>
+                <h3 class="headerButton"><a href="#124260706">1. Cloud Accounting Basics<span class="course-information"><span class="course-description">Learn all the ways Xero works in the cloud.</span><span class="course-duration">4 minutes</span></span></a></h3>
+                <div>
+                    <p class="iframe-container"><iframe src="https://player.vimeo.com/video/124260706?api=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
+                </div>
+                <h3 class="headerButton"><a href="#124260709">2. Accounting 101<span class="course-information"><span class="course-description">Description Text goes here</span><span class="course-duration">12 minutes</span></span></a></h3>
+                <div>
+                    <p class="iframe-container"><iframe src="https://player.vimeo.com/video/124260709?api=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
+                </div>
+                <h3 class="headerButton"><a href="#124260710">3. Key Terms<span class="course-information"><span class="course-description">Description Text goes here</span><span class="course-duration">3 minutes</span></span></a></h3>
+                <div>
+                    <p class="iframe-container"><iframe src="https://player.vimeo.com/video/124260710?api=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
+                </div>
+                <h3 class="headerButton"><a href="#124260707">4. Final Recap<span class="course-information"><span class="course-description">Description Text goes here</span><span class="course-duration">1 minute</span></span></a></h3>
+                <div>
+                    <p class="iframe-container"><iframe src="https://player.vimeo.com/video/124260707?api=1" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
+                </div>
+                <h3><a href="#vimeoVideoID">5. This is where you put the title<span class="course-information"><span class="course-description">Description Text goes here</span><span class="course-duration">Video Length</span></span></a></h3>
+                <div>
+                    <p class="iframe-container">You put the iframe embed code in here.</p>
+                </div>
+            </div>
+            <!-- Nested Accordion -->
+       <!-- <h1>Nested Option 4</h1>
+            <div id='accordion-option4'>
+                <h3>1. Cloud Accounting Basics <span class="course-duration">4 minutes</span></h3>
+                <div>
+                    <p class="iframe-container"><iframe src="https://player.vimeo.com/video/124260706" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
+                </div>
+                    <h3>Section 2 &ndash; 4 has 3 Videos <span class="course-duration">16 minutes</span></h3>
+                        <div id='nested-accordion'>
+                            <h3>2. Accounting 101 <span class="course-duration">12 minutes</span></h3>
+                                <div>
+                                    <p class="iframe-container"><iframe src="https://player.vimeo.com/video/124260709" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
+                                </div>
+                                
+                            <h3>3. Key Terms <span class="course-duration">3 minutes</span></h3>
+                                <div>
+                                    <p class="iframe-container"><iframe src="https://player.vimeo.com/video/124260710" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
+                                </div>
+                                
+                            <h3>4. Final Recap <span class="course-duration">1 minute</span></h3>
+                                <div>
+                                    <p class="iframe-container"><iframe src="https://player.vimeo.com/video/124260707" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
+                                </div>
+                        </div>
+                <h3>5. This is where you put the title <span class="course-duration">Video Length</span></h3>
+                <div>
+                    <p class="iframe-container">You put the iframe embed code in here.</p>
+                </div>
+            </div> -->
+        </div>
+        <div>You will also want to check out <a href="https://docs.google.com/a/xero.com/document/d/1iWKEuz7wK7_ttHYkR3m91YAiqDCZr0WvW9uKvo_jHIQ/edit?usp=sharing">these documents</a> as you move through this course.</div>
+        
+<!-- Footer -->
+        <div class='feedback'>
+            <a href='http://www.surveygizmo.com/s3/1743110/Xero-SMB-Course-Feedback-AU' target='_blank'>
+                <img class='feedback-icon' src='https://training.xero.com/XeroU/one-page-assets/img/feedback-icon.png'/>
+                <span style='line-height: 40px;'>
+                    Give us feedback
+                </span>
+            </a>
+        </div>
+        <script type="text/javascript">
+            function toggle_popUp(id) {
+                  var e = document.getElementById(id);
+                  if(e.style.display == 'block') 
+                      e.style.display = 'none';
+                  else
+                  e.style.display = 'block';
+                };
+           
+            $(document).ready(function() {
+            $('.headerButton').click(function(){
+                $('.iframe-container').stopVideo();
+            });
+        });
+        </script>
+        </body>
+        </html>

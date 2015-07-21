@@ -1,0 +1,263 @@
+
+<html>
+
+
+    <head>
+        <!-- We like people who view source. Check out our careers page https://www.xero.com/careers/ -->
+        <!--title -->
+        <title>Xero U - Xero and Accounting Fundamentals for Business Owners</title>
+        <!-- stylesheets -->
+        <link rel='stylesheet' href='css/one-page-assets.css' type='text/css'>
+        <link rel="stylesheet" href="jquery/jquery-ui.css" type="text/css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+        
+		<link rel='shortcut icon' href='https://www.xero.com/favicon.ico'> 
+        <!-- scripts -->
+        <script src="jquery/jquery.js"></script>
+        <script src="jquery/jquery-ui.js"></script>
+        <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+        <script src='http://a.vimeocdn.com/js/froogaloop2.min.js'></script>
+        
+        <script>
+            $(function() {
+                $( "#accordion" ).accordion({
+                collapsible: true, active: false, heightStyle: "content", animate: 200
+                });
+                $( "#accordion" ).accordion({
+             icons: {"header": "ui-icon-plus", "activeHeader": "ui-icon-minus"}
+            });
+            $('#accordion h3').bind('click',function(){
+            var self = this;
+            setTimeout(function() {
+                theOffset = $(self).offset();
+                $('body,html').animate({ scrollTop: theOffset.top - 75 });
+            }, 310);
+                });
+            });
+        </script> 
+        
+    </head>
+    <body>
+        <div class='header-mobile'>
+            <div class='header-mobile-inner'>
+                <a href='https://www.xero.com/training/'>
+                    <img class='mobile-header-img' src='https://training.xero.com/XeroU/one-page-assets/img/logo-blue-small.png'/>
+                    <span class='mobile-header-text'>GO TO XERO U</span>
+                </a>
+            </div>
+        </div>
+        <div class='header-large'>
+            <div class='header-large-inner'>
+                <div class='header-left'>
+                    <a target='_blank' class='global-header-logo' href='https://www.xero.com/' rel='home' data-gacategory='Header - Global' data-gaaction='Internal Pagelink'>
+                        <img class='header-img' src='https://training.xero.com/XeroU/one-page-assets/img/logo-blue-small.png'/>
+                    </a>
+                    <span class='header-tagline'>
+                        Beautiful accounting software
+                    </span>
+                </div>
+                <div class='header-right'>
+                    <a class='global-header-main-link' href='https://www.xero.com/training/' target='_blank'>GO TO XERO U</a>
+                </div>
+            </div>
+        </div>
+        <div class='header-bottom-border' style='background-color: #13B5EA;'>
+        </div>
+        <div class='body-box-top-outer'>    
+            <div class='body-box-top'>
+                <div class='course-info'>
+                    <div class='course-name'>
+                        <h1>Xero & Accounting Fundamentals</h1>
+                    </div>
+                    <div class='course-description'>
+                        This four-module course aims to provide a foundational level of accounting knowledge for those without any prior bookkeeping or accounting education.<br><br>
+
+A great starting point, before you progress on to other Xero U courses.
+                    </div>
+                </div>
+                <div class='preview-video-box' id='button'>
+
+                    <img class='preview-video-img' style='cursor: default;' alt='Xero U Preview' src='https://www.xero.com/images/training/preview-video-blue.jpg'/>
+                </div>
+                <div id='video-box' class='preview-vid-iframe'>
+                    <iframe class='preview-vid-iframe-actual' style='float: right;' id='video' src='https://player.vimeo.com/video/?api=1&player_id=video' width='420' height='240' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class='body-box-bottom-outer'>
+            <div class='body-box-bottom'>
+                <div class='watch-now'>
+                    <h1 style='margin-top:0px; margin-bottom:25px;'>
+                        Watch Now
+                    </h1>
+                </div>
+               <!--  <div class='video-list'> -->
+            
+                <!-- video 1 start-->  
+                <div class='video-info'>
+                    <div class='video-info-header' onclick="flipChevron('chev1','video1', 'chevdir1');">
+                        <div class='video-icon'>
+                            <img src='https://training.xero.com/XeroU/one-page-assets/img/play.png'class='play-icon'/>
+                        </div>
+                        <div class='video-name'>
+                            1. Cloud Accounting Basics
+                        </div>
+                        <div class='video-duration'>
+                            <span>
+                                4 minutes
+                            </span>
+                        </div>
+                        <div class='video-description'>
+                            
+                        </div>
+                        <div class='video-chevron'>
+                            <input id='chevdir1' value='down' class='chevStatus' type='hidden'/>
+                            <img style='margin-top: 9px; opacity:.9;' class='flip' id='chev1' src='https://training.xero.com/XeroU/one-page-assets/img/down.png'/>
+                        </div>
+                    </div>
+                    <div id='video1' class='video-player-box'>
+                        <div class='video-player-inner'>
+                            <iframe src='https://player.vimeo.com/video/124260706' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                
+            <!-- video 1 end-->
+                        
+                <!-- video 2 start-->                    
+                <div class='video-info'>
+                    <div class='video-info-header' onclick="flipChevron('chev2','video2', 'chevdir2');">
+                        <div class='video-icon'>
+                            <img src='https://training.xero.com/XeroU/one-page-assets/img/play.png'class='play-icon'/>
+                        </div>
+                        <div class='video-name'>
+                            2. Accounting 101
+                        </div>
+                        <div class='video-duration'>
+                            <span>
+                                12 minutes
+                            </span>
+                        </div>
+                        <div class='video-description'>
+                            
+                        </div>
+                        <div class='video-chevron'>
+                            <input id='chevdir2' value='down' class='chevStatus' type='hidden'/>
+                            <img style='margin-top: 9px; opacity:.9;' class='flip' id='chev2' src='https://training.xero.com/XeroU/one-page-assets/img/down.png'/>
+                        </div>
+                    </div>
+                    <div id='video2' class='video-player-box'>
+                        <div class='video-player-inner'>
+                            <iframe src='https://player.vimeo.com/video/124260709' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                
+            <!-- video 2 end-->
+                
+                                <!-- video 3 start-->                    
+                <div class='video-info'>
+                    <div class='video-info-header' onclick="flipChevron('chev3','video3', 'chevdir3');">
+                        <div class='video-icon'>
+                            <img src='https://training.xero.com/XeroU/one-page-assets/img/play.png'class='play-icon'/>
+                        </div>
+                        <div class='video-name'>
+                            3. Key Terms
+                        </div>
+                        <div class='video-duration'>
+                            <span>
+                                3 minutes
+                            </span>
+                        </div>
+                        <div class='video-description'>
+                            
+                        </div>
+                        <div class='video-chevron'>
+                            <input id='chevdir3' value='down' class='chevStatus' type='hidden'/>
+                            <img style='margin-top: 9px; opacity:.9;' class='flip' id='chev3' src='https://training.xero.com/XeroU/one-page-assets/img/down.png'/>
+                        </div>
+                    </div>
+                    <div id='video3' class='video-player-box'>
+                        <div class='video-player-inner'>
+                            <iframe src='https://player.vimeo.com/video/124260710' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                
+            <!-- video 3 end-->
+                
+                        
+                <!-- video 4 start-->                    
+                <div class='video-info'>
+                    <div class='video-info-header' onclick="flipChevron('chev4','video4', 'chevdir4');">
+                        <div class='video-icon'>
+                            <img src='https://training.xero.com/XeroU/one-page-assets/img/play.png'class='play-icon'/>
+                        </div>
+                        <div class='video-name'>
+                            4. Final Recap
+                        </div>
+                        <div class='video-duration'>
+                            <span>
+                                1 minute
+                            </span>
+                        </div>
+                        <div class='video-description'>
+                            
+                        </div>
+                        <div class='video-chevron'>
+                            <input id='chevdir4' value='down' class='chevStatus' type='hidden'/>
+                            <img style='margin-top: 9px; opacity:.9;' class='flip' id='chev4' src='https://training.xero.com/XeroU/one-page-assets/img/down.png'/>
+                        </div>
+                    </div>
+                    <div id='video4' class='video-player-box'>
+                        <div class='video-player-inner'>
+                            <iframe src='https://player.vimeo.com/video/124260707' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                
+            <!-- video 4 end-->
+            </div>
+                
+              
+            <div id="newLessonStyle">
+            
+            <div id='accordion'>
+                <h3>1. Cloud Accounting Basics <span class="course-duration">4 minutes</span></h3>
+                <div>
+                    <p class="iframe-container"><iframe src="https://player.vimeo.com/video/124260706" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
+                </div>
+                <h3>2. Accounting 101 <span class="course-duration">12 minutes</span></h3>
+                <div>
+                    <p class="iframe-container"><iframe src="https://player.vimeo.com/video/124260709" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
+                </div>
+                <h3>3. Key Terms <span class="course-duration">3 minutes</span></h3>
+                <div>
+                    <p class="iframe-container"><iframe src="https://player.vimeo.com/video/124260710" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
+                </div>
+                <h3>4. Final Recap <span class="course-duration">1 minute</span></h3>
+                <div>
+                    <p class="iframe-container"><iframe src="https://player.vimeo.com/video/124260707" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe></p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class='feedback'>
+            <a href='http://www.surveygizmo.com/s3/1743110/Xero-SMB-Course-Feedback-AU' target='_blank'>
+                <img class='feedback-icon' src='../one-page-assets/img/feedback-icon.png'/>
+                <span style='line-height: 40px;'>
+                    Give us feedback
+                </span>
+            </a>
+        </div>
+        
+        
+    </body>
+</html>
+    
