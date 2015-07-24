@@ -44,13 +44,8 @@ font-weight: normal;
 }
 
 .body-box-top-outer h1 {
-    padding: 10px;
-    margin-top: 0px;
-}
-
-/*For Xero Unplugged*/
-.watch-now {
-  margin-bottom: 3em;
+ padding: 10px 10px 10px 0;
+ margin-top: 0px;
 }
 
 .feedback-icon {
@@ -148,8 +143,7 @@ text-decoration: none !important;
 .header-mobile a:hover .mobile-header-text {
 color: #fff;
 background: rgba(0, 221, 187, .9);
-border-radius: .2em;
-padding: .1em;
+border-radius: .1em;
 transition: all 0.2s;
 }
 
@@ -163,7 +157,7 @@ line-height: 40px;
 vertical-align: middle;
 line-height: 40px;
 margin-left: 10px;
-padding: .1em; 
+padding: .3em; 
 }
 
 .body-box-top {
@@ -260,26 +254,28 @@ margin-left: 3%;
 margin-right: 3%;
 }
 
-.preview-video-box {
+.hero-right-box {
 float: right;
-transition-duration: .5s;
-width: 40%;
-height: 80%;
-border-radius: .3em;
-text-align: center;
-border: .1em solid #0DB;
+width: 42%;
+margin-top: -2em;
+height: 100%;
 }
 
-.preview-video-img {
-width: 100%;
-margin-top: 3em;
-background-color: #0DB;
-padding-top: 2em;
-padding-bottom: 2em;
+.hero-right-img {
+height: 100%;
+margin-left: 9em;
+}
+
+span.powered-xu-right {
+  margin-left: -9.5em;
 }
 
 .body-box-top {
 margin: auto;
+}
+
+.course-name, .course-description {
+	margin-left: 4em;
 }
 
 .body-box-bottom-outer {
@@ -443,10 +439,12 @@ a.playVideoEmbed {
 
 a.playVideoEmbed2 {
   background: url("../Unplugged-Thumbs/Greg_Kyte_2.jpg") 0px 0px/100% no-repeat;
+  margin-top: 1.5em;
 }
 
 a.playVideoEmbed3 {
   background: url("../Unplugged-Thumbs/Rick_Solomon_2.jpg") 0px 0px/100% no-repeat;
+  margin-top: .75em;
 }
 
 a.playVideoEmbed4 {
@@ -459,6 +457,7 @@ a.playVideoEmbed5 {
 
 a.playVideoEmbed6 {
   background: url("../Unplugged-Thumbs/Jess_Kiuhan_2.jpg") 0px 0px/100% no-repeat;
+    margin-top: .75em;
 }
 
 a.playVideoEmbed7 {
@@ -467,34 +466,42 @@ a.playVideoEmbed7 {
 
 a.playVideoEmbed8 {
   background: url("../Unplugged-Thumbs/Keith-Mueller.png") 0px 0px/100% no-repeat;
+  margin-top: .75em;
 }
 
 a.playVideoEmbed9 {
   background: url("../Unplugged-Thumbs/Adrian_Simmons_2.jpg") 0px 0px/100% no-repeat;
+  margin-top: .75em;
 }
 
 a.playVideoEmbed10 {
   background: url("../Unplugged-Thumbs/Jacqueline_Reyes_2.jpg") 0px 0px/100% no-repeat;
+  margin-top: .75em;
 }
 
 a.playVideoEmbed11 {
   background: url("../Unplugged-Thumbs/Liz_Mason_2.jpg") 0px 0px/100% no-repeat;
+  margin-top: .75em;
 }
 
 a.playVideoEmbed12 {
   background: url("../Unplugged-Thumbs/Rebekah-Brown.png") 0px 0px/100% no-repeat;
+  margin-top: .75em;
 }
 
 a.playVideoEmbed13 {
   background: url("../Unplugged-Thumbs/Patti_Scharf_2.jpg") 0px 0px/100% no-repeat;
+  margin-top: .75em;
 }
 
 a.playVideoEmbed14 {
   background: url("../Unplugged-Thumbs/Bill_Sheridan_2.jpg") 0px -50px/100% no-repeat;
+  margin-top: .75em;
 }
 
 a.playVideoEmbed15 {
   background: url("../Unplugged-Thumbs/Blake-Oliver.png") 0px 0px/100% no-repeat;
+  margin-top: .75em;
 }
 
 
@@ -666,22 +673,19 @@ a.bx-prev:hover, a.bx-next:hover {
 
 /*For Xero Unplugged Landing page */
 
-.xero-unplugged-header-bottom-border {
-  height: .5em;
-}
-
 .unplugged-hero-left {
   float: right
 }
 
 img.xero-unplugged-hero {
   float: left;
-  height: 100%;
+  height: 70%;
+  margin-top: 2.5em;
 }
 
 span.powered-xu {
   margin-left: -10em;
-  margin-top: 20.25em;
+  margin-top: 17.25em;
   display: inline-block;
 }
 
@@ -724,9 +728,18 @@ background-color: #1E3240;
   margin-right: 10%;
 }
 
+.xero-unplugged-overview-session {
+width: 40%;
+height: 100%;
+float: right;
+margin-right: 20%;
+}
+
+
 .xero-unplugged-description {
   margin-left: 5%;
   margin-right: 5%;
+  text-align: center;
 }
 
 .xero-unplugged-boxes {
@@ -742,27 +755,27 @@ background-color: #1E3240;
 }
 
 .x-unplugged-box {
-  background: url("../Unplugged-Thumbs/Cristina_Garza_2.jpg") 0 0/100% no-repeat;
+  background: url("../Unplugged-BW/Cristina_Garza_2.jpg") 0 0/100% no-repeat;
 }
 
 .x-unplugged-box2 {
-  background: url("../Unplugged-Thumbs/Stephen_Brunson_2.jpg") 0 0/100% no-repeat;
+  background: url("../Unplugged-BW/Stephen_Brunson_2.jpg") 0 0/100% no-repeat;
 }
 
 .x-unplugged-box3 {
-  background: url("../Unplugged-Thumbs/Jason_Blumer_2.jpg") 0 0/100% no-repeat;
+  background: url("../Unplugged-BW/Jason_Blumer.jpg") 0 0/100% no-repeat;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
 
 .x-unplugged-box4 {
-background: url("../Unplugged-Thumbs/Jacqueline_Reyes_2.jpg") 0 0/100% no-repeat;
+background: url("../Unplugged-BW/Jacqueline_Reyes_2.jpg") 0 0/100% no-repeat;
 -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
 
 .x-unplugged-box5 {
-  background: url("../Unplugged-Thumbs/Patti_Scharf_2.jpg") 0 0/100% no-repeat;
+  background: url("../Unplugged-BW/Patti_Scharf_2.jpg") 0 0/100% no-repeat;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }
@@ -807,7 +820,7 @@ a.unplugged-session-blue {
 }*/
 
 a.unplugged-session-gray {
-  background-color: rgba(77, 80, 87, .7);
+  background-color: rgba(77, 80, 87, .5);
 }
 
 a.unplugged-session-green:hover p.sessionThumbnailBanner {
@@ -830,7 +843,6 @@ a.unplugged-session-blue:hover {
   margin-top: 5.7em;
   float: right;
   margin-right: .2em;
-  opacity: .5;
   display: none;
 }
 
@@ -860,6 +872,15 @@ p.unplugged-coming {
 display: block;
 }
 
+a.unplugged-header-link {
+margin-left: .5em;
+margin-top: initial;
+}
+
+img.unplugged-header-img {
+vertical-align: middle;
+}
+
 .header-large {
 display: none;
 }
@@ -881,6 +902,14 @@ height: auto;
 
 .preview-button, .preview-video-box, .preview-button-img, .preview-vid-iframe, .preview-video-img, .preview-vid-iframe-actual {
 display: none;
+}
+
+.hero-right-box, .hero-right-img {
+display: none;
+}
+
+.course-name, .course-description {
+	margin-left: initial;
 }
     
 .body-box-top-outer {
@@ -912,8 +941,9 @@ padding-top: 30px;
 }
   
 .course-info {
-width: 460px;
+width: 58%;
 float: left;
+margin-top: 2em;
 }
     
 .body-box-bottom {
@@ -953,7 +983,7 @@ margin-top: initial;
 }
 
 @media screen and (min-width: 400px) and (max-width: 980px){
-.xero-unplugged-overview {
+.xero-unplugged-overview, .xero-unplugged-overview-session {
 margin-right: 2%;
 width: 60%;
 text-align: center;
@@ -990,7 +1020,7 @@ height: 18em;
 display: none;
 }
 
-.xero-unplugged-overview {
+.xero-unplugged-overview, .xero-unplugged-overview-session {
 width: 100%;
 float: left;
 }
@@ -999,12 +1029,17 @@ float: left;
 display: initial;
 }
 
+p.course-video__speaker-description {
+	width: initial;
+}
+
 a.playVideoEmbed, a.playVideoEmbed2, a.playVideoEmbed3, 
 a.playVideoEmbed4, a.playVideoEmbed5, a.playVideoEmbed6,
 a.playVideoEmbed7, a.playVideoEmbed8, a.playVideoEmbed9, 
 a.playVideoEmbed10, a.playVideoEmbed11, a.playVideoEmbed12, 
 a.playVideoEmbed13, a.playVideoEmbed14, a.playVideoEmbed15 {
 background: none;
+margin-top: initial;
 }
 
 span.unpluggedPreviewBox {
@@ -1025,6 +1060,7 @@ display: none;
 
 span.vid-thumbnail-play-green {
 background-color: rgba(0, 221, 187, .6);
+margin-top: 1.5em;
 }
 };
  
