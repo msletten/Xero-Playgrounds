@@ -1,0 +1,90 @@
+
+<html>
+    <head>
+        <!-- We like people who view source. Check out our careers page https://www.xero.com/careers/ -->
+        <!--title -->
+        <title>Xero U - Captivate Training</title>
+        <!-- stylesheets -->
+        <link rel='stylesheet' href='css/elearning-style.css' type='text/css'>
+		<link rel='shortcut icon' href='https://www.xero.com/favicon.ico'> 
+        <!-- scripts -->
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+        <script src='http://a.vimeocdn.com/js/froogaloop2.min.js'></script>
+ 
+    </head>
+    <body>
+        <div class='header-mobile'>
+            <div class='header-mobile-inner'>
+                <a href='https://drive.google.com/drive/folders/0B8MjJZh9lhLMTXdQWkVsdkJWQW8'>
+                    <img class='mobile-header-img' src='https://training.xero.com/XeroU/one-page-assets/img/logo-blue-small.png'/>
+                    <span class='mobile-header-text'>GO TO CAPTIVATE U</span>
+                </a>
+            </div>
+        </div>
+        <div class='header-large'>
+            <div class='header-large-inner'>
+                <div class='header-left'>
+                    <a target='_blank' class='global-header-logo' href='https://www.xero.com/' rel='home' data-gacategory='Header - Global' data-gaaction='Internal Pagelink'>
+                        <img class='header-img' src='https://training.xero.com/XeroU/one-page-assets/img/logo-blue-small.png'/>
+                    </a>
+                    <span class='header-tagline'>Story Driven Learning</span>
+                </div>
+                <div class='header-right'>
+                    <a class='global-header-main-link' href='https://drive.google.com/drive/folders/0B8MjJZh9lhLMTXdQWkVsdkJWQW8' target='_blank'>GO TO CAPTIVATE U</a>
+                </div>
+            </div>
+        </div>
+   <div class='xero-unplugged-box-top-outer'>
+                <div class="beyond-box-top-inner">
+                    <h1>Xero Captivate Training</h1>
+                </div>    
+            
+                <div class="beyond-hero-box">
+                    <div class="iframe-container"><iframe name="videoFrame" id="videoFrame" src="https://player.vimeo.com/video/138579076" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+     <div class="vid-thumbs-inner">
+        <!-- <ul class="videoBoxSlider"> -->
+        <ul class="vid-swap-buttons">
+        <li class="Thumb-Box"><!-- <span class="smb-module-title">Title Module 1</span> --><a id="138579076" href="#138579076" data-link="https://player.vimeo.com/video/138579076?autoplay=1" class="vid-swap"><img src="Images/playWhite.png" /></a><span class="smb-module-title">1. Captivate Walkthrough</span></li>
+        <li class="Thumb-Box2"><!-- <span class="smb-module-title">Title Module 3</span> --><a id="139755110" href="#139755110" data-link="https://player.vimeo.com/video/139755110?autoplay=1" class="vid-swap"><img src="Images/playWhite.png" /></a><span class="smb-module-title">2. Slide Creation Overview</span></li>
+        <li class="Thumb-Box3"><!-- <span class="smb-module-title">Title Module 4</span> --><a id="139749254" href="#139749254" data-link="https://player.vimeo.com/video/139749254?autoplay=1" class="vid-swap"><img src="Images/playWhite.png" /></a><span class="smb-module-title">3. Advanced Actions / <br>Naming Elements / <br>Button Styles</span></li>
+        <li class="Thumb-Box4"><!-- <span class="smb-module-title">Title Module 4</span> --><a id="139749471" href="#139749471" data-link="https://player.vimeo.com/video/139749471?autoplay=1" class="vid-swap"><img src="Images/playWhite.png" /></a><span class="smb-module-title">4. Hiding Placeholders / <br>Customizing Elements</span></li>
+        <li class="Thumb-Box5"><!-- <span class="smb-module-title">Title Module 4</span> --><a id="139749252" href="#139749252" data-link="https://player.vimeo.com/video/139749252?autoplay=1" class="vid-swap"><img src="Images/playWhite.png" /></a><span class="smb-module-title">5. Naming Slides</span></li>
+        <li class="Thumb-Box6"><!-- <span class="smb-module-title">Title Module 4</span> --><a id="138814958" href="#138814958" data-link="https://player.vimeo.com/video/138814958?autoplay=1" class="vid-swap"><img src="Images/playWhite.png" /></a><span class="smb-module-title">6. Photoshop v Captivate / <br>Using Layers</span></li>
+        <li class="Thumb-Box7"><!-- <span class="smb-module-title">Title Module 4</span> --><a id="139749253" href="#139749253" data-link="https://player.vimeo.com/video/139749253?autoplay=1" class="vid-swap"><img src="Images/playWhite.png" /></a><span class="smb-module-title">7. Quiz Slides / <br>More Style Settings</span></li>
+        </ul>
+      </div>
+  </div>
+
+        <script type="text/javascript">
+
+            // Swaps videos in iframe
+            $(document).ready(function(){
+            $('.vid-swap').click( function(v){
+                v.preventDefault();
+            var vidID = $(this).attr('data-link');
+            $('.iframe-container').find('#videoFrame').attr('src', vidID);
+            return false;
+            });
+            //auto scroll to top of video play window
+            $('.vid-swap').bind('click',function(){
+                    // var self = this;
+                    var self = $('.xero-unplugged-box-top-outer');
+                    setTimeout(function() {
+                    theOffset = $(self).offset();
+                    $('body,html').animate({ scrollTop: theOffset.top - 25});
+                    }, 310);
+            });
+            //allows starting video to be sent as a link based on the anchor ref
+            var hash = window.location.hash;
+            var anchor = $('a[href$="'+hash+'"]');
+            if (anchor.length > 0){
+            anchor.click();
+            };
+            });
+
+        </script>
+
+    </body>
+</html>

@@ -355,9 +355,13 @@ height: 100%;
 /*Xero Beyond Accounting*/
 
 .beyond-box-top-inner {
-  width: 80%;
+  width: 65%;
   margin-left: auto;
   margin-right: auto;
+}
+
+a.unplugged-header-link:hover, a.global-header-main-link:hover {
+  background: rgba(223, 225, 231, .7);
 }
 
 .beyond-box-top-inner h1 {
@@ -365,7 +369,7 @@ height: 100%;
 }
 
 .beyond-hero-box {
-  width: 80%;  
+  width: 65%;  
   font-weight: normal; 
   padding: 0px;
   margin-top: .6em; 
@@ -374,6 +378,8 @@ height: 100%;
   color: #8B8B8B;  
   overflow-y: auto;
 }
+
+
    
 /*.beyond-hero-box p {padding-left: 10px; padding-right: 10px; text-align: left; -webkit-font-smoothing: antialiased; font-smoothing: antialiased;}
 .beyond-hero-box a {color: #404040; text-decoration: none;}
@@ -407,7 +413,7 @@ ul.vid-swap-buttons {
 li.Thumb-Box, li.Thumb-Box2, li.Thumb-Box3 {
   list-style: none;
   display: inline-block;
-  margin: .5em 3em;
+  margin: .5em 1em;
 }
 
 .Thumb-Box, .Thumb-Box2, .Thumb-Box3 {
@@ -430,8 +436,8 @@ li.Thumb-Box, li.Thumb-Box2, li.Thumb-Box3 {
 a.vid-swap {
   cursor: pointer;
   display: inline-block;
-  width: 15em;
-  height: 10em;
+  width: 12em;
+  height: 8em;
   text-decoration: none;
   color: inherit;
   border-radius: .5em;
@@ -440,7 +446,7 @@ a.vid-swap {
 .vid-swap img {
   padding: .75em 1.75em;
   background-color: rgba(0,0,0,.5);
-  margin-top: 6.25em;
+  margin-top: 4.25em;
   margin-left: .5em;
   border-radius: .2em;
 }
@@ -449,6 +455,12 @@ a.vid-swap:hover img {
   background-color: #00b7e2;
   transition: all 0.2s;
 }
+
+span.beyond-vid-title {
+    display: block;
+    color: #E3E7EB;
+}
+
 
 .vid-thumbs-outer {
   width: 80%;

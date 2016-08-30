@@ -91,9 +91,9 @@ Video 3
         <div class="vid-thumbs-inner">
         <!-- <ul class="videoBoxSlider"> -->
         <ul class="vid-swap-buttons">
-        <li class="Thumb-Box"><a href="#133572820" data-link="133572820" class="vid-swap"><img src="Beyond-Images/playWhite.png" /></a></li>
-        <li class="Thumb-Box2"><a href="#133914934" data-link="133914934" class="vid-swap"><img src="Beyond-Images/playWhite.png" /></a></li>
-        <li class="Thumb-Box3"><a href="#133921238" data-link="133921238" class="vid-swap"><img src="Beyond-Images/playWhite.png" /></a></li>
+        <li class="Thumb-Box"><a href="#133572820" data-link="133572820" class="vid-swap"><img src="Beyond-Images/playWhite.png" /></a><span class="beyond-vid-title">Title 1</span></li>
+        <li class="Thumb-Box2"><a href="#133914934" data-link="133914934" class="vid-swap"><img src="Beyond-Images/playWhite.png" /></a><span class="beyond-vid-title">Title 2</span></li>
+        <li class="Thumb-Box3"><a href="#133921238" data-link="133921238" class="vid-swap"><img src="Beyond-Images/playWhite.png" /></a><span class="beyond-vid-title">Title 3</span></li>
         </ul>
         </div>
         </div>
@@ -222,6 +222,15 @@ Video 3
             var vidID = $(this).attr('data-link');
             $('.iframe-container').find('#videoFrame').attr('src', 'https://player.vimeo.com/video/'+vidID+'?autoplay=1');
             return false;
+            });
+            //auto scroll to top of iframe
+            $('.vid-swap').bind('click',function(){
+                    // var self = this;
+                    var self = $('.xero-unplugged-box-top-outer');
+                    setTimeout(function() {
+                    theOffset = $(self).offset();
+                    $('body,html').animate({ scrollTop: theOffset.top - 25});
+                    }, 310);
             });
             //allows starting video to be sent as a link based on the anchor ref
             var hash = window.location.hash;
